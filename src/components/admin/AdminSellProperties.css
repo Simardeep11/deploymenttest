@@ -1,0 +1,42 @@
+.admin-sell-properties-wrapper {
+    padding: 20px;
+  }
+  
+  .admin-sell-properties-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .admin-sell-properties-item {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .admin-sell-properties-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+  
+  .admin-additional-images img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

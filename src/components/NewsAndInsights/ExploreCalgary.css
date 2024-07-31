@@ -1,0 +1,206 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d6c8b8;
+}
+
+.calgary-explore-container {
+    color: #3E3D32;
+    background-color: #d6c8b8;;
+}
+
+.calgary-explore-header {
+    background: linear-gradient(135deg, #B8B298, #8A6543);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.calgary-back-home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: #8A6543;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calgary-back-home-button:hover {
+    background-color: #6D4E2F;
+}
+
+.calgary-news-insights-switch {
+    margin-top: 10px;
+}
+
+.calgary-news-insights-switch label {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calgary-news-insights-switch input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.calgary-explore-content {
+    padding: 20px;
+}
+
+/* Different background colors for each section container */
+.calgary-explore-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background: #2D2C28;
+}
+
+.calgary-explore-section-1 {
+    background: #3B3A30;
+}
+
+.calgary-explore-section-2 {
+    background: #554F41;
+}
+
+.calgary-explore-section-3 {
+    background: #4F4A44;
+}
+
+.calgary-explore-section-4 {
+    background: #3A3630;
+}
+
+.calgary-explore-section-5 {
+    background: #1E1F26;
+}
+
+.calgary-explore-section-6 {
+    background: #2E3A46;
+}
+
+.calgary-explore-section-7 {
+    background: #3A506B;
+}
+
+.calgary-explore-section-8 {
+    background: #5B6C85;
+}
+
+.calgary-section-image {
+    flex: 1;
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Contrasting background colors for each text container */
+.calgary-explore-text {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #E6DDC5;
+}
+
+.calgary-explore-text-1 {
+    background: #E6DDC5;
+}
+
+.calgary-explore-text-2 {
+    background: #D0CBB5;
+}
+
+.calgary-explore-text-3 {
+    background: #B8B298;
+}
+
+.calgary-explore-text-4 {
+    background: #A39171;
+}
+
+.calgary-explore-text-5 {
+    background: #F2EDE3;
+}
+
+.calgary-explore-text-6 {
+    background: #DDE2E6;
+}
+
+.calgary-explore-text-7 {
+    background: #BAC5D1;
+}
+
+.calgary-explore-text-8 {
+    background: #A8B1C3;
+}
+
+.calgary-section-title {
+    color: #3E3D32;
+}
+
+.calgary-query-button {
+    background-color: #59656D;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.calgary-query-button:hover {
+    background-color: #49505B;
+}
+
+.calgary-booking-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.calgary-booking-button {
+    background-color: #8A6543;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calgary-booking-button:hover {
+    background-color: #6D4E2F;
+}
+
+/* Chart container styling */
+.chart-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.chart-container {
+    width: 50%; /* Reduced width */
+    background: #F0E6DC;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

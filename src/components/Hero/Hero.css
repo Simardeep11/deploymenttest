@@ -1,0 +1,93 @@
+/* Hero.css */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Ensure text color is white */
+}
+
+.paddings {
+  padding: 0 20px;
+}
+
+.innerWidth {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  text-align: center; /* Center align the text */
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content */
+}
+
+.hero-title {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.orange-circle {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.search-bar .button {
+  padding: 10px 20px;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.stats {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.secondaryText {
+  color: #ddd;
+  font-size: 14px;
+}

@@ -1,0 +1,83 @@
+.account-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #333; /* Ensure text color is visible */
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333; /* Ensure text color is visible */
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333; /* Ensure text color is visible */
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333; /* Ensure text color is visible */
+  }
+  
+  .input-group input,
+  .input-group select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f9f9f9; /* Lighten the background of inputs */
+    color: #333; /* Ensure text color is visible */
+  }
+  
+  .input-group input::placeholder,
+  .input-group select::placeholder {
+    color: #999; /* Placeholder color */
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: var(--blue); /* Highlight border on focus */
+  }
+  
+  button {
+    align-self: flex-end;
+    padding: 0.5rem 1rem;
+    background: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: darkblue;
+  }
+  

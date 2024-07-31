@@ -1,0 +1,146 @@
+/* SellPropertyFormPage1.css */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page1-container {
+  display: flex;
+  height: 100vh;
+}
+
+.page1-left-column {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.page1-left-column::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/Cityscape2.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.page1-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 100px;
+  z-index: 1;
+}
+
+.page1-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.page1-contact-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.page1-right-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #122343;
+  padding: 20px;
+}
+
+.page1-form-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.page1-form-container h1 {
+  color: #fff;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.page1-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.page1-input,
+.page1-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.page1-button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.page1-next-button,
+.page1-back-home-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 130px;
+}
+
+.page1-next-button {
+  background-color: #d3af7a;
+  color: white;
+}
+
+.page1-next-button:hover {
+  background-color: #b38f5a;
+}
+
+.page1-back-home-button {
+  background-color: #e57373;
+  color: white;
+}
+
+.page1-back-home-button:hover {
+  background-color: #d32f2f;
+}

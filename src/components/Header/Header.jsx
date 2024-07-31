@@ -1,0 +1,76 @@
+import React, { useContext, useState } from "react";
+import "./Header.css";
+import { BiMenuAltRight } from "react-icons/bi";
+import { getMenuStyles } from "../../utils/common";
+import useHeaderColor from "../../hooks/useHeaderColor";
+import OutsideClickHandler from "react-outside-click-handler";
+import { AuthContext } from "../../context/AuthContext";
+import { FaUserCircle } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+
+const Header = () => {
+  const { user, userLoggedIn, logout } = useContext(AuthContext);
+  const [menuOpened, setMenuOpened] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const headerColor = useHeaderColor();
+  const navigate = useNavigate();
+
+  const handleDropdownToggle = (e) => {
+    e.stopPropagation();
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleOutsideClick = () => {
+    setMenuOpened(false);
+    setDropdownOpen(false);
+  };
+
+  const handleNavigation = (path) => {
+    setDropdownOpen(false);
+    navigate(path);
+  };
+
+  return (
+    <header className="ee-header-wrapper" style={{ background: headerColor }}>
+      <div className="ee-flexCenter ee-innerWidth ee-paddings ee-header-container">
+        <div className="ee-logo-text">ELITE ESTATE</div>
+
+        <OutsideClickHandler onOutsideClick={handleOutsideClick}>
+          <div className="ee-flexCenter ee-header-menu" style={getMenuStyles(menuOpened)}>
+            <a href="#buy">Buy</a>
+            <a href="#sell">Sell</a>
+            <a href="#contact-us">Contact Us</a>
+            <a href="#news-insight">News and Insight</a>
+            {userLoggedIn ? (
+              <div className="ee-profile-menu" onClick={handleDropdownToggle}>
+                <FaUserCircle size={30} />
+                {dropdownOpen && (
+                  <div className="ee-profile-dropdown">
+                    <p>{user.email}</p>
+                    <button onClick={() => handleNavigation('/account')}>My Account</button>
+                    <button onClick={() => handleNavigation('/favorites')}>My Favorites</button>
+                    <button onClick={() => handleNavigation('/bookings')}>My Bookings</button>
+                    {user.email === "kaursimar1149@gmail.com" && (
+                      <button onClick={() => handleNavigation('/admin')}>Admin Dashboard</button>
+                    )}
+                    <button className="ee-logout-button" onClick={logout}>Logout</button>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <button className="ee-header-login-button" onClick={() => navigate("/login")}>
+                Login
+              </button>
+            )}
+          </div>
+        </OutsideClickHandler>
+
+        <div className="ee-menu-icon" onClick={() => setMenuOpened((prev) => !prev)}>
+          <BiMenuAltRight size={30} />
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

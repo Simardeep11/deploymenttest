@@ -1,0 +1,95 @@
+/* Overall admin page styling */
+.admin-wrapper {
+  display: flex;
+  flex-direction: row; /* Adjust to row for side-by-side layout */
+  align-items: flex-start; /* Align items at the start of the flex container */
+  width: 100%; /* Use full width of the viewport */
+  margin: 0 auto; /* Center the wrapper */
+  background-color: #f4f4f4; /* Light grey background */
+}
+
+/* Header styling */
+h1 {
+  text-align: center;
+  width: 100%; /* Full width for the header */
+  padding: 20px 0;
+  background-color: #333; /* Dark grey background for the header */
+  color: #fff; /* White text color */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+/* Main content area containing form and list */
+.admin-content {
+  display: flex;
+  width: 100%; /* Full width to contain both form and list side by side */
+  background-color: #fff; /* White background for content areas */
+}
+
+/* Form section styling */
+.admin-form-section {
+  flex: 1; /* Allocate half of the space to form */
+  padding-right: 20px; /* Padding to separate form from the list */
+  border-right: 2px solid #ccc; /* Grey border to separate form from list */
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 800px; /* Fixed height to enable scrolling */
+}
+
+/* Adjust image size within the form */
+.admin-form-section img {
+  max-width: 100px; /* Limit width to 100px */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between form elements */
+}
+
+
+/* Property list section styling */
+.admin-list {
+  flex: 2; /* Allocate more space to the list than the form */
+  padding-left: 20px; /* Padding to separate list from the form */
+  overflow-y: auto; /* Allow scrolling for long lists */
+  height: 800px; /* Fixed height for consistent layout */
+}
+
+/* Styling individual property items within the list */
+.admin-list-item {
+  border: 1px solid #ddd; /* Light grey border around each item */
+  padding: 10px;
+  margin-bottom: 10px; /* Space between items */
+  background-color: #f9f9f9; /* Very light grey for item backgrounds */
+}
+
+.admin-list-item h2 {
+  margin: 0; /* Remove default margin */
+  padding-bottom: 10px; /* Space below the title */
+  color: #333; /* Dark grey for text */
+}
+
+.admin-list-item img {
+  max-width: 100%; /* Ensure image does not overflow its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.admin-additional-images img {
+  width: 50px; /* Smaller width for additional images */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 5px; /* Space between images */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .admin-content {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .admin-form-section, .admin-list {
+    padding: 10px 0; /* Adjust padding for smaller screens */
+    width: 100%; /* Full width for better readability */
+    height: auto; /* Remove fixed height for responsive behavior */
+  }
+}

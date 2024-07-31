@@ -1,0 +1,122 @@
+/* ThankYouPage.css */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-column {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px 20px; /* Increased padding for better spacing */
+  text-align: center;
+}
+
+.left-column::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/Cityscape15.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.4; /* Adjust opacity for transparency */
+  z-index: 0; /* Ensure it is behind all other content */
+}
+
+.left-column .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 100px; /* Adjust size as needed */
+  z-index: 1; /* Ensure it is above the background */
+}
+
+.left-column h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold; /* Make the heading bold */
+  z-index: 1; /* Ensure it is above the background */
+}
+
+.left-column .contact-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 20px;
+  z-index: 1; /* Ensure it is above the background */
+}
+
+.right-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #122343; /* Dark Slate Gray */
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  padding: 40px; /* Increased padding for better spacing */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow */
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.thank-you-wrapper {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+}
+
+.thank-you-wrapper h1 {
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.thank-you-wrapper p {
+  font-size: 18px;
+  color: #81c784;
+  margin-bottom: 20px;
+}
+
+.thank-you-wrapper button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #388e3c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.thank-you-wrapper button:hover {
+  background-color: #2e7d32;
+}
